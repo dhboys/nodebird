@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Link from 'next/link';
-import { Menu } from 'antd';
+import { Menu, Input } from 'antd';
 
 const AppLayout = ({children}) => {
     return (
@@ -13,6 +13,9 @@ const AppLayout = ({children}) => {
             <Menu.Item>
                 <Link href="/profile"><a>Profile</a></Link>
             </Menu.Item>   
+            <Menu.Item>
+                <Input.Search enterButton style={{verticalAlign:'middle'}}/>
+            </Menu.Item>  
             <Menu.Item>
                 <Link href="/signup"><a>Sign Up</a></Link>
             </Menu.Item>
