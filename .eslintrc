@@ -18,5 +18,11 @@
     "plugins": [
         "import",
         "react-hooks"
-    ]
+    ],
+    "rules": {
+        "no-unused-vars": 1,
+        "no-use-before-define": 1,
+        "no-redeclare": 1,
+        "no-console": 0
+    }
 }
